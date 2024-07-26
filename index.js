@@ -12,7 +12,7 @@ const {
 dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 4000;
 const caCert  = fs.readFileSync(path.join(__dirname, 'certs/ca.pem')).toString();
 
 
